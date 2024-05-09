@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <form>
+    <div class="form-row">
+      <div class="col">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+        </div>
+        <div class="form-group">
+          <label for="senha">Senha:</label>
+          <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+        </div>
+        <div class="form-group">
+          <label for="idade">Idade:</label>
+          <input type="number" class="form-control" id="idade" placeholder="Digite sua idade">
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="endereco">Endereço:</label>
+          <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço">
+        </div>
+        <div class="form-group">
+          <label for="genero">Gênero:</label>
+          <select class="form-control" id="genero">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="interesses">Interesses:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="esporte" value="esporte">
+            <label class="form-check-label" for="esporte">Esporte</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="musica" value="musica">
+            <label class="form-check-label" for="musica">Música</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="tecnologia" value="tecnologia">
+            <label class="form-check-label" for="tecnologia">Tecnologia</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Escolha uma opção:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="opcao" id="opcao1" value="opcao1">
+            <label class="form-check-label" for="opcao1">Opção 1</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="opcao" id="opcao2" value="opcao2">
+            <label class="form-check-label" for="opcao2">Opção 2</label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="processa_formulario.php"></script>
+
+</body>
+</html>
